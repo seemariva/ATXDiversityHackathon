@@ -1,0 +1,19 @@
+
+/* space from nav */
+.container, .demo-card-wide {
+	padding-top: 5%;
+}
+
+/* makes the cards for the social media presence wider and with a pink border*/
+.demo-card-wide {
+	margin:0 auto;
+    border: 1px solid pink;
+    padding: 5%; 
+    width: 50rem;
+}
+
+/* decreases size of hashtags*/
+.hashtags{
+	font-size: 11px;
+	color: #333333;
+}

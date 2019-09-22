@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+     <title>My Feed</title>
+
+    <link rel="stylesheet" type="text/css" href="https://code.getmdl.io/1.3.0/material.purple-pink.min.css" />
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <!--Import materialize.css-->
+       <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+<!-- icon for the upward arrow, this is for the upvotes -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="index.css" rel="stylesheet">
+
+    <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+
+  </head>
+  <body>
+
+
+
+<!--this displays our navigation bar and links to other pages on the website-->
+
+ <!-- Always shows a header, even in smaller screens. -->
+<div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+  <header class="mdl-layout__header">
+    <div class="mdl-layout__header-row">
+      <!-- Title -->
+      <span class="mdl-layout-title">My Feed</span>
+      <!-- Add spacer, to align navigation to the right -->
+      <div class="mdl-layout-spacer"></div>
+      <!-- Navigation. We hide it in small screens. -->
+      <nav class="mdl-navigation mdl-layout--large-screen-only">
+        <a class="mdl-navigation__link" href="">Trending</a>
+        <a class="mdl-navigation__link" href="index.html">About</a>
+        <a class="mdl-navigation__link" href="">Resources</a>
+      </nav>
+    </div>
+  </header>
+  <div class="mdl-layout__drawer">
+    <span class="mdl-layout-title">Title</span>
+    <nav class="mdl-navigation">
+	    <a class="mdl-navigation__link" href="">Trending</a>
+	    <a class="mdl-navigation__link" href="index.html">About</a>
+	    <a class="mdl-navigation__link" href="">Resources</a>
+    </nav>
+  </div>
+  <main class="mdl-layout__content">
+    <div class="page-content"><!-- Your content goes here --></div>
+  </main>
+</div>
+
+
+    <!--Elements visible to users go here-->
+  <!--this class displays the question for user2 on the current feed-->
+ 
+
+
+<!-- Wide card with share menu button , this displays the first users question and has comments
+upvotes and report buttons-->
+<style>
+/*.demo-card-wide.mdl-card {
+  width: 512px;
+}
+.demo-card-wide > .mdl-card__title {
+  color: #fff;
+  height: 176px;
+  background: url('../assets/demos/welcome_card.jpg') center / cover;
+}
+.demo-card-wide > .mdl-card__menu {
+  color: #fff;
+}*/
+</style>
+
+
+<style type="text/css"></style>
+<div class = "container">
+<!--this class displays the question and responses and upvotes for user on the current feed--> 
+<div class="demo-card-wide mdl-card mdl-shadow--2dp">
+
+  <div class="mdl-card__title">
+    <h2 class="mdl-card__title-text">BossWoman</h2>
+  </div>
+  <div class="question">
+    Last night, my manager asked my male counterpart to present sections of the deliverable that we both worked in while we were on a conference call with the client.  I worked on half of the deliverable but I wasn't asked to contribute.  I feel slighted.  Should I bring this up to my manager?
+  </div>
+
+     <div class="hashtags">
+   	<!--this class has the current hash tags related to the question--> 
+    #rude #gaslighting #sabotage #conferencecall #microaggression #ignored #leftout
+  </div>
+
+  <div class="seeComments">
+    <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+      View Comments
+    </a>
+  </div>
+  <div class="upVote">
+    	<i class="material-icons">arrow_upward</i>
+    	<span>(607)</span>
+    	<!--this class has the upvotes and the amount of upvotes--> 
+  </div>
+</div>
+
+
+
+<div class="demo-card-wide mdl-card mdl-shadow--2dp">
+  <div class="mdl-card__title">
+    <h2 class="mdl-card__title-text">TheGreatest</h2>
+  </div>
+  <div class="question">
+    My male co-worker was asked to present sections of the deliverable that we both worked on during a conference call with a client.  I worked on a large portion of the deliverable and wasn't asked to present or answer questions about my sections when they came up.  I have client-facing experience so I felt slighted.  Should I tell my manager how I feel about this? 
+  </div>
+
+     <div class="hashtags">
+   	<!--this class has the current hash tags related to the question--> 
+    #rude #gaslighting #sabotage #conferencecall #microaggression
+  </div>
+
+  <div class="seeComments">
+    <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+      View Comments
+    </a>
+  </div>
+  
+    <div class="upVote">
+    	<i class="material-icons">arrow_upward</i>
+    	<span>(133)</span>
+    	<!--this class has the upvotes and the amount of upvotes--> 
+  </div>
+</div>
+
+
+<div class="demo-card-wide mdl-card mdl-shadow--2dp">
+  <div class="mdl-card__title">
+    <h2 class="mdl-card__title-text">BosSLadY</h2>
+  </div>
+  <div class="question">
+    One of my female co-workers is frustrated because an internal stakeholder is condescending and rude to her in email.  When she raised the issue with our first line manager, he said “that is how it is here.  It’s always been this way.  if you don’t like it, leave”.  This makes me wonder whether I am better off looking for a different job.  Is there anything I can do? 
+  </div>
+   <div class="hashtags">
+   	<!--this class has the current hash tags related to the question--> 
+    #rude #condescending #frustrated
+  </div>
+
+  <div class="seeComments">
+    <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+      View Comments
+    </a>
+  </div>
+  
+    <div class="upVote">
+    	<i class="material-icons">arrow_upward</i>
+    	<span>(6k)</span>
+    	<!--this class has the upvotes and the amount of upvotes--> 
+  </div>
+</div>
+
+</div>
+
+
+    </body>
+</html>

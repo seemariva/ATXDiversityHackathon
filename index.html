@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>WomanHackWork</title>
+
+    <link rel="stylesheet" type="text/css" href="https://code.getmdl.io/1.3.0/material.purple-pink.min.css" />
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link href="index.css" rel="stylesheet">
+    <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+
+
+  <!--TItle is what shows in the browser tab -->
+
+  <!--Elements visible to users go here-->
+
+    <!-- update the version number as needed -->
+    <script defer src="/__/firebase/6.6.2/firebase-app.js"></script>
+    <!-- include only the Firebase features as you need -->
+    <script defer src="/__/firebase/6.6.2/firebase-auth.js"></script>
+    <script defer src="/__/firebase/6.6.2/firebase-database.js"></script>
+    <script defer src="/__/firebase/6.6.2/firebase-messaging.js"></script>
+    <script defer src="/__/firebase/6.6.2/firebase-storage.js"></script>
+    <!-- initialize the SDK after all desired features are loaded -->
+    <script defer src="/__/firebase/init.js"></script>
+
+    <style media="screen">
+      body { background: #ECEFF1; color: rgba(0,0,0,0.87); font-family: Roboto, Helvetica, Arial, sans-serif; margin: 0; padding: 0; }
+      #message { background: white; max-width: 360px; margin: 100px auto 16px; padding: 32px 24px; border-radius: 3px; }
+      #message h2 { color: #ffa100; font-weight: bold; font-size: 16px; margin: 0 0 8px; }
+      #message h1 { font-size: 22px; font-weight: 300; color: rgba(0,0,0,0.6); margin: 0 0 16px;}
+      #message p { line-height: 140%; margin: 16px 0 24px; font-size: 14px; }
+      #message a { display: block; text-align: center; background: #039be5; text-transform: uppercase; text-decoration: none; color: white; padding: 16px; border-radius: 4px; }
+      #message, #message a { box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24); }
+      #load { color: rgba(0,0,0,0.4); text-align: center; font-size: 13px; }
+      @media (max-width: 600px) {
+        body, #message { margin-top: 0; background: white; box-shadow: none; }
+        body { border-top: 16px solid #ffa100; }
+      }
+    </style>
+  </head>
+  <body>
+    <!--Elements visible to users go here-->
+  <!--this class tells the user who we are and what this app is about-->
+ 
+
+<!--this displays our navigation bar and links to other pages on the website-->
+  <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+  <header class="mdl-layout__header">
+    <div class="mdl-layout__header-row">
+      <!-- Title -->
+      <span class="mdl-layout-title">About</span>
+      <!-- Add spacer, to align navigation to the right -->
+      <div class="mdl-layout-spacer"></div>
+      <!-- Navigation. We hide it in small screens. -->
+      <nav class="mdl-navigation mdl-layout--large-screen-only">
+        <a class="mdl-navigation__link" href="">Trending</a>
+        <a class="mdl-navigation__link" href="feeding.html">My Feed</a>
+        <a class="mdl-navigation__link" href="">Resources</a>
+      </nav>
+    </div>
+  </header>
+  <div class="mdl-layout__drawer">
+    <span class="mdl-layout-title">Title</span>
+    <nav class="mdl-navigation">
+      <a class="mdl-navigation__link" href="">Trending</a>
+      <a class="mdl-navigation__link" href="index.html">About</a>
+      <a class="mdl-navigation__link" href="">Resources</a>
+    </nav>
+  </div>
+  <main class="mdl-layout__content">
+    <div class="page-content"><!-- Your content goes here --></div>
+  </main>
+</div>
+
+  <div class="container">
+  <main class="mdl-layout__content">
+    <div class="page-content">
+       <div class="about">
+        <h1>About</h1>
+        <h2>What is WomanHackWork</h2>
+        <p> WomanHackWork is an empowerment network connecting like-minded peers anonymously to seek career advice when needed <br>. WomanHackWork believes that a supporting environment can help women acquire the skills to identify toxic work conditions and to resolve them to further advance their careers or to find the opportunities that are right for them <br> </p>
+
+        <h2>How to get started</h2>
+        <p> Create a User Account<br>User names should not be associated with you name, last name or combination<br>Confirm your account<br>Submit an issue or question to the WomanHackWork network and select the hashtags from the suggested options that is more appropriate to your situation or create a new hashtag. Employer names or individuals referenced in your personal challenge should be omitted <br>Review posts from WomanHackWork network<br>Comment, Upvote or Report<br>Take charge of your career by selecting the right action for your style and/or situation<br></p>
+
+        <h2>Code of Conduct</h2>
+        <p> WomanHackWork is meant to be a safe environment where sensitive and difficult issues are shared.  WomanHackWork expects everyone to abide by this code of conduct.  Violation of this code could result in being banned from the WomanHackWork network and no longer have access to associated benefits<br>WomanHackWork doesn't tolerate discrimination of any kind, especially on the basis of race, ethnicity, religion, sexual orientation, national origin, disability, gender identity or citizenship status<br>  WomanHackWork is committed to create a non-hostile space.<br> Respect one another<br> Listen with the intention to understand <br>. Help when you have something positive and constructive to share <br>Make WomanHackWork a comfortable environment based on your personal standard <br>Don't divulge our dialogues <br>Report any violations to the code of conduct <br> Report empowerment moments, raises and promotions <br></p>
+      </div>
+    </div>
+  </main>
+</div>
+
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
+        // // The Firebase SDK is initialized and available here!
+        //
+        // firebase.auth().onAuthStateChanged(user => { });
+        // firebase.database().ref('/path/to/ref').on('value', snapshot => { });
+        // firebase.messaging().requestPermission().then(() => { });
+        // firebase.storage().ref('/path/to/ref').getDownloadURL().then(() => { });
+        //
+        // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
+
+        // try {
+        //   let app = firebase.app();
+        //   let features = ['auth', 'database', 'messaging', 'storage'].filter(feature => typeof app[feature] === 'function');
+        //   document.getElementById('load').innerHTML = `Firebase SDK loaded with ${features.join(', ')}`;
+        // } catch (e) {
+        //   console.error(e);
+        //   document.getElementById('load').innerHTML = 'Error loading the Firebase SDK, check the console.';
+        // }
+
+        var starCountRef = firebase.database().ref('feeds/');
+        starCountRef.on('value', function(snapshot) {
+          //updateStarCount(postElement, snapshot.val());
+          console.log(JSON.stringify(snapshot))
+        });
+        firebase.database().ref('feeds/' + "feedId").set({
+          username: "name",
+          email: "email",
+          profile_picture : "imageUrl"
+        });
+      });
+
+    </script>
+  </body>
+</html>
